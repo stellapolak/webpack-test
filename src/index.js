@@ -1,10 +1,12 @@
+import _ from 'lodash';
+
 function component() {
-    const element = document.createElement('div');
+    const element = document.createElement('div'); //csinál egy divet  
   
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+     // Lodash, now imported by this script
+    element.innerHTML = _.join(['Hello', 'webpack'], ' '); //beletölti a 'hellot' és 'webpacket'
   
-    return element;
+    return element; //ezt fűzi a body végére
   }
   
   document.body.appendChild(component());
